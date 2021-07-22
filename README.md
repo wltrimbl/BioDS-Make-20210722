@@ -48,7 +48,7 @@ https://swcarpentry.github.io/make-novice/files/make-lesson.zip
 
 # Lessons
 The lessons are here:
-(Software Carpentry Make lesson)[https://swcarpentry.github.io/make-novice/]
+[Software Carpentry Make lesson](https://swcarpentry.github.io/make-novice/)
 
 # Some of the ways Make can be useful:
 * The "textbook" example:  you have a directory which contains the text of your dissertation, another directory which contains the figures of your dissertation, and another directory which contains the data and scripts that generate the figures.  Make builds your thesis when the text changes, the scripts that draw the figures change, or when you replace the data.  You have a make target to update your thesis, and another make target to back it up remotely.
@@ -59,9 +59,9 @@ The lessons are here:
 
 # Examples in the wild
 * An example of tedious format conversion work done by a makefile (converting 400,000 black and white files into 100,000 color ones:
-(thumbnailpolish makefile)[https://github.com/wltrimbl/thumbnailpolish/blob/master/src/Makefile]
+[thumbnailpolish makefile](https://github.com/wltrimbl/thumbnailpolish/blob/master/src/Makefile)
 
-* (Khmer's makefile)[https://github.com/dib-lab/khmer/blob/master/Makefile], for building a piece of scientific sofware
+* [Khmer's makefile](https://github.com/dib-lab/khmer/blob/master/Makefile), for building a piece of scientific sofware
 
-* (A utilitarian data-munging makefile for NGS data)[https://github.com/wltrimbl/BioDS-Make-20210722/blob/master/mappit.mk]
+* [A utilitarian data-munging makefile for NGS data](https://github.com/wltrimbl/BioDS-Make-20210722/blob/master/mappit.mk)
 
