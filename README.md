@@ -1,4 +1,4 @@
-==Make for getting things done==
+#Make for getting things done
 
 BioDS workshop, 2021-07-22, Drexel / Rowan / University of Chicago
 
@@ -30,7 +30,7 @@ Among the drawbacks--Make is hard to debug, it uses difficult-to-remember variab
 Installing
 Linux and OSX users will have make built in to their operating system.  Open "Terminal" and confirm that make works with
 
-   make -v
+    make -v
 
 
 Most Windows users who use make use ssh (PuTTY) to run commands on linux/unix servers elsewhere.
@@ -38,31 +38,29 @@ Most Windows users who use make use ssh (PuTTY) to run commands on linux/unix se
 If you are running Windows, don't use ssh,  and want to follow along, you can run make (and an editor) in a docker container under windows. 
 Install Docker Desktop https://www.docker.com/products/docker-desktop, open a Command Prompt
 
-docker run --rm -it ubuntu 
-apt update && apt-get install -y make nano curl unzip && cd
-curl -OLJ https://swcarpentry.github.io/make-novice/files/make-lesson.zip
+    docker run --rm -it ubuntu                                   # downloads and starts a blank ubuntu docker image
+    apt update && apt-get install -y make nano curl unzip && cd  # installs the minimum -- make, curl, nano and unzip 
+    curl -OLJ https://swcarpentry.github.io/make-novice/files/make-lesson.zip  # gets the test data
 
 Download 
 https://swcarpentry.github.io/make-novice/files/make-lesson.zip
 
-The lessons are here
-https://swcarpentry.github.io/make-novice/
+# Lessons
+The lessons are here:
+(Software Carpentry Make lesson)[https://swcarpentry.github.io/make-novice/]
 
-And some examples:
-
-Some of the ways Make can be useful:
+# Some of the ways Make can be useful:
 * The "textbook" example:  you have a directory which contains the text of your dissertation, another directory which contains the figures of your dissertation, and another directory which contains the data and scripts that generate the figures.  Make builds your thesis when the text changes, the scripts that draw the figures change, or when you replace the data.  You have a make target to update your thesis, and another make target to back it up remotely.
 
 * Use a wildcard pattern in a certain directory to detect "input" files and run a potentially many-step pipeline to generate the output files.
 * Use a file containing "targets" (Acession nubmers or URIS) and use Make to download the things that are still needed.
 * You can make a Makefile with instructions on how to do boring format conversions (particularly easily if you can encode the format in the filename).
 
+# Examples in the wild
 * An example of tedious format conversion work done by a makefile (converting 400,000 black and white files into 100,000 color ones:
-https://github.com/wltrimbl/thumbnailpolish/blob/master/src/Makefile
+(thumbnailpolish makefile)[https://github.com/wltrimbl/thumbnailpolish/blob/master/src/Makefile]
 
+* (Khmer's makefile)[https://github.com/dib-lab/khmer/blob/master/Makefile], for building a piece of scientific sofware
 
-* Khmer's makefile, for building a piece of scientific sofware
-https://github.com/dib-lab/khmer/blob/master/Makefile
-
-
+* (A utilitarian data-munging makefile for NGS data)[https://github.com/wltrimbl/BioDS-Make-20210722/blob/master/mappit.mk]
 
