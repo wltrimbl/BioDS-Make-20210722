@@ -28,11 +28,11 @@ There is a better way.  Make was designed to save the computer work by checking 
 
 Among the drawbacks--Make is hard to debug, it uses difficult-to-remember variables, and it is so ugly that the programmer types don't like to use it anymore (so they use one of a dozen replacements for make that address some if its flaws).  Among the advantages--it manages what do to based on whether the files are there (or are recent) and it is present on really almost every system you can expect to find.
 
-Installing
+# Installing
+
 Linux and OSX users will have make built in to their operating system.  Open "Terminal" and confirm that make works with
 
     make -v
-
 
 Most Windows users who use make use ssh (PuTTY) to run commands on linux/unix servers elsewhere.
 
@@ -43,7 +43,7 @@ Install Docker Desktop https://www.docker.com/products/docker-desktop, open a Co
     apt update && apt-get install -y make nano curl unzip && cd  # installs the minimum -- make, curl, nano and unzip 
     curl -OLJ https://swcarpentry.github.io/make-novice/files/make-lesson.zip  # gets the test data
 
-Download 
+# Download lesson materials
 https://swcarpentry.github.io/make-novice/files/make-lesson.zip
 
 # Lessons
